@@ -8,48 +8,13 @@ const questions = ['What is the title of the project?', 'Enter description:' , '
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', data, (fileName, err) => {
-        err ? console.log(err) : console.log(`${fileName} has been created!`)
+    console.log(`${fileName} has been created!`);
+    fs.writeFile('README.md', data, (err) => {
+        if(err) {
+            console.log(err);
+        }
     })
 }
-
-const generateReadMe = (response) =>{
-    `#${response.title}
-
-    Table of Contents:
-        -(Description)[#Description]
-        -(Installation)[#Installation]
-        -(Usage)[#Usage]
-        -(Contributing)[#Contributing]
-        -(Tests)[#Tests]
-        -(License)[#License]
-        -(Questions)[#Questions]
-
-    #Description: 
-    ${response.description}
-
-    #Installation:
-    ${response.installationInstructions}
-
-    #Usage:
-    ${response.usageInformation}
-
-    #Contributing:
-    ${response.contribution}
-
-    #Tests:
-    ${response.testInstructions}
-
-    #License:
-    ${response.license}
-
-    #Questions:
-    Github Profile?
-    https://www.github.com/${response.username}
-    How can you reach me?
-    ${response.email}
-    `
-} 
 
 // TODO: Create a function to initialize app
 function init() {
