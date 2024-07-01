@@ -70,13 +70,13 @@ function init() {
     .then((response) => writeToFile('Generated ReadMe', `# ${response.title}
 
     Table of Contents:
-        -(Description)[#Description]
-        -(Installation)[#Installation]
-        -(Usage)[#Usage]
-        -(Contributing)[#Contributing]
-        -(Tests)[#Tests]
-        -(License)[#License]
-        -(Questions)[#Questions]
+        -(Description)[#description]
+        -(Installation)[#installation]
+        -(Usage)[#usage]
+        -(Contributing)[#contributing]
+        -(Tests)[#tests]
+        -(License)[#license]
+        -(Questions)[#questions]
 
     #Description: 
     ${response.description}
