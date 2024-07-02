@@ -67,41 +67,42 @@ function init() {
             message: questions[8],
         },
     ])
-    .then((response) => writeToFile('Generated ReadMe', `# ${response.title}
+    .then((response) => writeToFile('Generated ReadMe', 
+`# ${response.title}
 
-    Table of Contents:
-        -(Description)[#description]
-        -(Installation)[#installation]
-        -(Usage)[#usage]
-        -(Contributing)[#contributing]
-        -(Tests)[#tests]
-        -(License)[#license]
-        -(Questions)[#questions]
+# Table of Contents:
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-    #Description: 
-    ${response.description}
+# Description: 
+${response.description}
 
-    #Installation:
-    ${response.installationInstructions}
+# Installation:
+${response.installationInstructions}
 
-    #Usage:
-    ${response.usageInformation}
+# Usage:
+${response.usageInformation}
 
-    #Contributing:
-    ${response.contribution}
+# Contributing:
+${response.contribution}
 
-    #Tests:
-    ${response.testInstructions}
+# Tests:
+${response.testInstructions}
 
-    #License:
-    ${response.license}
+# License:
+${response.license}
 
-    #Questions:
-    Github Profile?
-    [Link to Github](https://www.github.com/${response.username})
-    How can you reach me?
-    ${response.email}
-    `))
+#Questions:
+Github Profile?
+[Link to Github](https://www.github.com/${response.username})
+How can you reach me?
+${response.email}
+`))
 }
 
 // Function call to initialize app
