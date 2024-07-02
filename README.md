@@ -5,4 +5,4 @@ There were many challenges that I faced while creating this project.  One of the
 
 ![Walkthrough Video](./Develop/images/readme-generator-walkthrough.gif)
 
-[Link to video](https://drive.google.com/file/d/1svoyFDodkfnD42zdi-QPbJ3LROqJG08r/view?usp=sharing);
+[Link to video](https://drive.google.com/file/d/1svoyFDodkfnD42zdi-QPbJ3LROqJG08r/view?usp=sharing)
