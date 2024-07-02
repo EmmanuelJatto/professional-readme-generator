@@ -3,6 +3,6 @@ The goal of this project was to create a professional readme generator, so that 
 
 There were many challenges that I faced while creating this project.  One of the challenges were figuring out how to format and create the readme.  
 
-![Walkthrough Video](./Develop/images/readme-generator-video.gif)
+![Walkthrough Video](./Develop/images/readme-generator-walkthrough.gif)
 
-[Link to video](./Develop/images/readme-generator-video.gif)
+[Link to video](./Develop/images/readme-generator-walkthrough.gif);
